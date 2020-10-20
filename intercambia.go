@@ -3,9 +3,7 @@ package main
 import "fmt"
 
 func intercambia(a, b *int) {
-	t := *a
-	*a = *b
-	*b = t
+	*a, *b = *b, *a
 }
 
 func main() {
